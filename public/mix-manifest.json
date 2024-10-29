@@ -1,0 +1,10 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/init.js": "/js/init.js",
+    "/css/app.css": "/css/app.css",
+    "/css/papp.css": "/css/papp.css",
+    "/js/pages/person/form.js": "/js/pages/person/form.js",
+    "/js/pages/person/index.js": "/js/pages/person/index.js",
+    "/js/pages/user/index.js": "/js/pages/user/index.js",
+    "/js/publicpages/person/index.js": "/js/publicpages/person/index.js"
+}

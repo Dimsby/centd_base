@@ -1,0 +1,129 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito|PT+Serif');
+
+// Variables
+@import 'pvariables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    background-color: #1d2124;
+}
+
+.header {
+    height: 200px;
+    width:100%;
+    background-color: #cdc18d;
+    cursor: pointer;
+}
+
+.footer, .footer a {
+    height: 200px;
+    color: #fff;
+}
+
+
+.header-content {
+    position: relative;
+    height: 100%;
+    background-image: url("/base/images/top.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@include media-breakpoint-down(md) {
+    .header {
+        display: none;
+    }
+}
+
+.content-wrapper {
+    position: relative;
+    margin-top: -17px;
+    padding-top: 40px;
+    min-height: 100vh;
+}
+.content-wrapper:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: skewy(-1deg);
+    transform-origin: 50% 0;
+    outline: 1px solid transparent;
+    backface-visibility: hidden;
+    background: linear-gradient(180deg, rgb(240, 240, 240) 0%, rgb(255, 255, 255) 900px);
+}
+
+.content {
+    position: relative;
+    padding: 15px;
+}
+
+.content-header {
+
+}
+
+.content-body {
+    padding: 15px;
+    background-color: #fff;
+}
+
+h1, .card-header {
+    font-family: 'PT Serif', serif;
+}
+
+.card {
+    background: none;
+    border: none;
+    margin: 10px 0;
+}
+.card-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: none;
+}
+.card-body hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.scroll {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+
+dl {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+dt {
+    font-weight: 400;
+}
+
+dd {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+@include media-breakpoint-up(md) {
+    dt {
+        text-align: right;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    dt {
+        text-align: left;
+    }
+}

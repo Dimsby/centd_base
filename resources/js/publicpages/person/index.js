@@ -1,0 +1,6 @@
+
+window.mix = {
+    data:{
+        items: []
+    }
+};
